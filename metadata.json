@@ -1,0 +1,5 @@
+{
+  "name": "BrainDoc",
+  "description": "An intelligent agent that analyzes technical or organizational contexts to generate the most relevant deliverables like commit messages, tickets, and technical documentation.",
+  "requestFramePermissions": []
+}

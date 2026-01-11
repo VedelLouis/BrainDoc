@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainDoc</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+        }
+        .font-mono-code {
+            font-family: 'Fira Code', monospace;
+        }
+        /* Custom styles for markdown rendering since we don't have tailwind typography plugin easily available */
+        .prose-custom h1 { @apply text-2xl font-bold mb-4 text-white; }
+        .prose-custom h2 { @apply text-xl font-bold mb-3 mt-6 text-white border-b border-slate-700 pb-1; }
+        .prose-custom h3 { @apply text-lg font-bold mb-2 mt-4 text-slate-200; }
+        .prose-custom p { @apply mb-4 text-slate-300 leading-relaxed; }
+        .prose-custom ul { @apply list-disc pl-5 mb-4 text-slate-300; }
+        .prose-custom ol { @apply list-decimal pl-5 mb-4 text-slate-300; }
+        .prose-custom li { @apply mb-1; }
+        .prose-custom code { @apply font-mono bg-slate-800 px-1.5 py-0.5 rounded text-indigo-300 text-sm; }
+        .prose-custom pre { @apply bg-slate-900 p-4 rounded-xl border border-slate-700 overflow-x-auto mb-4 my-4; }
+        .prose-custom pre code { @apply bg-transparent p-0 text-slate-300; }
+        .prose-custom blockquote { @apply border-l-4 border-indigo-500 pl-4 italic text-slate-400 my-4; }
+        .prose-custom a { @apply text-indigo-400 hover:underline; }
+        .prose-custom table { @apply w-full border-collapse mb-4; }
+        .prose-custom th { @apply border border-slate-700 bg-slate-800 p-2 text-left text-sm font-semibold; }
+        .prose-custom td { @apply border border-slate-700 p-2 text-sm; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-markdown": "https://esm.sh/react-markdown@^9.0.1",
+    "remark-gfm": "https://esm.sh/remark-gfm@^4.0.0"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
